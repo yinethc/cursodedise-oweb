@@ -44,7 +44,9 @@
 
 		define un rango: <input type="range" name="rangos" size="50"> <br><br>
 
-		Adjuntar archivo: <input type="file" name="archivo"[] multiple="">
+		Adjuntar archivo: <input type="file" name="archivo"[] multiple=""> <br> <b></b>
+
+		buscar: <input type="search" name="buscador" placeholder="buscar. . .">
 		
 	</FORM>
 </body>
