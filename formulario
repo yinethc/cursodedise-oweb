@@ -48,6 +48,7 @@
 
 		buscar: <input type="search" name="buscador" placeholder="buscar. . .">
 		
+		
 	</FORM>
 </body>
 </html>
