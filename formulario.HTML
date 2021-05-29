@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formularios en HTML</title>
+</head>
+<body>
+	<h1>Como crear formularios en HTML</h1>
+	<FORM action="" method="post">
+		<label for="suNombre">Nombre</label>
+		<input type="text" name="nombre" id="suNombre" size="50" autocomplete="on" autofocus maxlength="10" required=""> <br><br>
+
+		<label for="suApellido">Apellido</label>
+		<input type="text" name="Apellido" id="suApellido" size="50" autocomplete="on" autofocus maxlength="10" value="Cervantes" readonly=""> <br><br>
+
+		<label for="suDireccion">Direccion</label>
+		<input type="text" name="Dieccion" id="suDireccion" size="50" autocomplete="on" autofocus placeholder="ej :calle, numero de casa o apt , ciudad." disabled=""><br><br>
+
+		<label for="suEmail">Email</label>
+		<input type="email" name="correo_electronico" id="suEmail" size="50" > <br><br>
+
+		<label for="suContrasena">contrasena</label>
+		<input type="password" name="contrasena id="suContrasena" size="50" > <br><br>
+
+		<label for="suDireccionweb">Direccion web</label>
+		<input type="url" name="direccion_web" id="suDireccionweb" size="50" > <br><br>
+
+		Edad <br>
+		<input type="radio" name="edad_usuario" value="menor18" checked=""> Menor de 18 años <br>
+		<input type="radio" name="edad_usuario" value="adulto">Entre 18 y 60 años <br>
+		<input type="radio" name="edad_usuario" value="envejeciente"> Mayor de 60 años
+
+	</FORM>
+</body>
+</html>

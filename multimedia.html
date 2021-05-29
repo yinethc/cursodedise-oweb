@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Elementos multimedia HTML</title>
+</head>
+<body>
+	<h1>Multimedia en HTML</h1>
+	<h2>Reprodutor de audio</h2>
+	<audio controls autoplay>
+		<source src="recursos/elefante.mp3" type="audio/mp3">
+			<source src="recursos/elefante.ogg" type="audio/ogg">
+				<source src="recursos/elefante.way" type="audio/wav">
+					<p>No se puede reproducir el archivo, El formato no es compatible con su navegador . Utilice otro navegador o contacte al Administtrador</p>
+	</audio>
+
+	<h2>Reproductor de videos</h2>
+	<video controls width="500" height="281 ">
+		<source src="recursos/cat.mp4" type="video/mp4">
+		<source src="recursos/cat.ogg" type="video/ogg">
+	</video>
+	<source src="recursos/cat.webm" type="video/webm">
+	</video>
+	<p>El video no ha podido reproducirse debido a que este formato de archivo no es compatible con el navegador</p>
+	</video>
+
+	<h2>Recurso incrustado</h2>
+	<iframe src="https://www.w3.org/" width="1000" height="500" allowfullscreen></iframe>
+	<br>
+	<br>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/7DBIR30ks64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	<br>
+	<br>
+	<!--Incrustar animacion en formato flash -->
+	<object data="recursos/rat.swf" width="300" height="350"> 
+		<param name="movie" value="recursos/rat.swf">
+		<param name="quality" value="high">
+		<param name="wmode" value="trasnparent">
+	</object>
+	<br>
+	<br>
+	<embed src="recursos/reloj.swf" type="aplication/vnd.flash-movie" width="300" height="350">
+</body>
+</html>
