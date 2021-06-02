@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Ejemplos de pseudo-elementos</title>
+    <style>
+      /* Pseudo-elemento ::first-letter */
+      p#primeraLetra::first-letter {
+          color:red;
+          font-size: 30px;
+      }
+      /* Pseudo-elemento :::first-line */
+      p#primeraLinea::first-line {
+          color:blue
+      }
+      /* Pseudo-elementos :::before y :::after */
+      p.error::before {
+          content: url(images/noche2.jpg);
+          vertical-aling: middle;
+          padding-right: 3px;
+      }
+p.error span::after{
+    content:"ATENCION";
+    color:red;
+    font-size: 20px;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+   <h1>Pseudo-elementos CSS</h1> 
+   <p id="primeraLetra">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
+   rerum a voluptas, reiciendis voluptatibus consequatur. Eligendi quos
+   provident cumque autem voluptatem vitae, pariatur natus molestiae dolores
+   quibusdam dolore saepe veniam.</p>
+   <p id="primeraLinea">Magnam laborum sit accusantium repellat vel illum dignissimos tenetur
+   maiores corrupti laudantium deleniti, sequi earum accusamus. Nobis maxime
+   ullam atque corporis ipsum, quod minus incidunt qui dignissimos, sequi fuga
+   eius!</p>
+   <p class="error"><span></span> eligendi esse minus dolor? Qui aspernatur in veniam aut assumenda!
+   Nemo provident nihil, perspiciatis dolore debitis distinctio fugiat
+   exercitationem, magnam ullam cum sunt aliquam eius eveniet, dignissimos
+   dolores. Nam.</p>
+   <p>Doloribus repellendus asperiores aperiam ratione eligendi omnis, ipsa
+   sequi quas corporis, laudantium quis necessitatibus molestias hic mollitia
+   tenetur adipisci! Ipsum voluptate aut molestias beatae deserunt, quam
+   explicabo molestiae dolorum eos!</p>
+   <p class="error"><span></span>, possimus consequatur! Ut eos at repellendus accusamus, est
+   distinctio quas officiis velit voluptatem, laborum quae voluptas inventore
+   quia quidem accusantium vel iure vitae, illo eius quod facilis nesciunt
+   assumenda.</p>
+   
+</body>
+</html>

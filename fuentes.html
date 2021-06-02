@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Fuentes o tipografias</title>
+    <style>
+        /* Prpiedad FONT-FAMILY */
+        body{
+            font-family: arial, tahoma, verdana, sans-serif
+        }
+       /* Propiedad FONT-SIZE */
+        h1{
+            font-size: 2.62rem /*42px/16=2.62em */
+        }
+        h2{
+            font-size: 2.18rem /*35px/16=2.18*/
+        }
+        p{
+            font-size: 1.25rem /*20ox/16=1.25em*/
+        }
+        p span {
+            font-size: 1.25rem
+        }
+
+        /* Propiedad FONT- WEIGHT */
+        #bold{
+            font-weight: bold;
+        }
+        #p500 {
+            font-weight: 500;
+        }
+        #p900{
+            font-weight: 900;
+        }
+
+        /* Propiedad FONT-STYLE */
+        #italica {
+            font-style:italic
+        }
+        #oblicuo {
+            font-style:oblique
+        }
+        /* Propiedad FONT-VARIANT */
+        #versalita {
+            font-variant: small-caps;
+        }
+        /* Propiedad FONT */
+        div p {
+            font: italic small-caps bold 1.20rem arial, sans-serif 
+        }
+    </style>
+</head>
+<body>
+  <h1>Fuentes CSS</h1>
+
+  <h2>propiedad font-size</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quis
+  voluptas sequi ipsam minus laudantium ipsum quas iure, deleniti sed corporis
+  dolor quos nesciunt magnam sunt perferendis quod consequuntur nisi.</p>
+  <p>Este texto tiene un tamaño de 1.25em. <span>este texto tambien tiene un tamaño de 1.25em</span></p>
+
+  <h2>Propiedad font-weight</h2>
+  <p>Este texto tiene aplicado el valor "normal"</p>
+  <p id="bold">Este texto tiene aplicado el valor "bold"</p>
+  <p id="p100">Este texto tiene aplicado un valor de 100</p>
+  <p id="p900">Este texto tiene aplicado un valor de 900</p>
+
+  <h2>Propiedad font-style</h2>
+  <p>Este texto se muestra con el estilo "normal"</p>
+  <p id="italica">Este texto se muestra con el estilo "italic"</p>
+  <p id="oblicuo">Este texto se muestra con el estilo "oblique"</p>
+   
+  <h2>Propiedad font-variant</h2>
+  <p>ESTE TEXTO SE MUESTRA EN MAYUSCULAS</p>
+  <p id="versalita">Este texto tambien se muestra en mayusculas</p>
+
+  <h2>Propiedad font</h2>
+  <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam beatae
+      quod necessitatibus, quidem recusandae quas odit accusamus natus vitae
+      sit. Amet veniam doloremque officia molestiae soluta voluptatem, aut sed!
+      Fuga?</p>
+  </div>
+</body>
+</html>
