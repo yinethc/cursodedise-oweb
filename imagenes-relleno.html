@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title> Bordes en CSS</title>
+    <title> Margenes y relleno</title>
     <style>
         html, body {
             height: 100%
@@ -14,46 +14,51 @@
            font-family: arial,sans-serif;
            font-size: 1.125rem;
             } 
+
             div {
-                width: 400px;
-                height: 400px;
-                border: 5px dotted #ff0000;
-                border-top: 2px solid #000 ;
-                border-bottom: 3px dashed #0000ff;
-                border-right: 12px groove #ffff00;
-                border-left: 4px outset #008000;
-            }     
-            #bordesRedondeados {
-                width: 400px;
-                height: 400px;
-                border: 2px solid;
-                border-radius: 92px 21px 181px 180px /5px 50px;
+                border:1px solid 
             }
-            #circulo {
-                width: 500px;
-                height: 500px;
-                border: 1px solid;
-                border-radius: 50%;
-            }
+           /* Como aplicar margenes a elementos HTML */
+          #texto-con-margenes{
+              margin:5em 2em 8em 3em;
+              padding: 3.5em 2em 1.8em 5em
+           }
 
-            img {
-                width: 300px;
-                height: 300px;
-                border-radius: 50%;
-
-            }
+           /* Centrar elementos HTML */
+           #centrar {
+               width: 400px;
+               height: 400px;
+               background-color: #008000;
+               color: #fff;
+               margin: auto;
+           }
        </style>
 </head>
 <body>
-<div>
-
-</div>
-<br><br>
-<div id="bordesRedondeados"></div>
-<br><br>
-<div id="circulo"></div>
-<br><br>
-
-    <img src="images/caballo.jpg" alt="imagen de un caballo">
+    <h1>Margenes y relleno en CSS</h1>
+    <div>
+        <h2>Texto sin margenes</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+        consectetur distinctio omnis ut sapiente fugit quis aspernatur at nam
+        quam perferendis est voluptates rerum aperiam dolore facere eligendi,
+        doloribus illo.</p>
+    </div>
+    <div id="texto-con-margenes">
+        <h2>Texto con margenes y padding</h2>
+        <p>A perferendis quam explicabo dolore, numquam totam. Et deleniti
+        cumque mollitia sequi, asperiores hic corporis omnis fugit amet id sunt
+        eos laudantium minus. Quam ullam explicabo nostrum? Doloribus, assumenda
+        minus?</p>
+    </div>
+    <div>
+        <h2>Texto sin margenes</h2>
+        <p>Et repellendus est aspernatur ipsa quo ea tempora illum labore alias
+        quae, debitis inventore nostrum deserunt quasi minima, tenetur similique
+        consequuntur reiciendis asperiores animi, autem magnam non at? Saepe,
+        alias!</p>
+    </div>
+    <div id="centrar">
+        <h2>Centrar elementos</h2>
+    </div>
 </body>
 </html>
