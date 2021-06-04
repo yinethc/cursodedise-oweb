@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title> Elementos flotantes en CSS</title>
+    <style>
+        html, body {
+            height: 100%
+        }
+
+       body {
+           font-family: arial,sans-serif;
+           font-size: 1.125rem;
+            } 
+
+            img {
+                width: 30% ;
+                height: auto;
+                float: left;
+                margin:0.3em 0.9em 0.3em 0
+            }
+
+            footer{
+                width: 95%;
+                height: auto;
+                font-size: 0.95rem;
+                margin-top: 2em;
+                padding: 0.2em 1em 2em;
+                border: 1px solid;
+                clear: both;
+            }
+
+            /* Crear contenido en columnas */
+            .caja {
+                width: 33.33%;
+                float: left;
+            }
+        </style>
+</head>
+<body>
+    <h1>Elementos flotantes</h1>
+
+    <section>
+        <article>
+            <img src="images/caballop.jpg" alt="imagen de un caballo">
+            <h2>Como adiestrar a tu perro</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Officiis pariatur animi earum adipisci voluptatem aspernatur
+            temporibus unde fuga necessitatibus nam facilis, sed consequuntur
+            quas aperiam deleniti mollitia quaerat eaque expedita?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Deserunt, in obcaecati vel facere, amet aut doloribus, possimus
+            nesciunt laudantium iure consequuntur ab? Ab officiis laboriosam
+            similique tempore doloremque corporis accusantium!</p>
+            <a href="#">Leer mas ...</a>
+        </article>
+        <footer>
+            <h3>Etiquetas</h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit
+        </footer>
+    </section>
+    <h2>Contenido en columnas</h2>
+    <div class="caja">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+        aliquam nobis cumque sit aperiam nesciunt, porro aspernatur qui, autem,
+        provident soluta ut commodi eum praesentium esse. Tempora expedita
+        assumenda vero?</p>
+        <a href="#">Leer mas...</a>
+    </div>
+    <div class="caja">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
+        aliquid recusandae adipisci, temporibus, explicabo laboriosam ea quam
+        ipsa consequatur perferendis deleniti, beatae error ipsam doloribus
+        repellat facere nulla corporis veritatis?</p>
+        <a href="#">Leer mas...</a>
+    </div>
+    <div class="caja">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam neque
+        non autem deserunt eligendi distinctio maiores ducimus molestias
+        deleniti. Est, natus? Tempore eveniet debitis sequi repellat
+        repellendus, esse velit deleniti?</p>
+        <a href="#">Leer mas...</a>
+    </div>
+</body>
+</html>
