@@ -4,16 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title> Modificar el modelo de cajas de CSS</title>
+    <title> Propiedades Display y Visibility</title>
     <style>
-        html {
-            box-sizing: border-box;
-        }
-        
-        *, *::before, *::after {
-            box-sizing: border-box;
-        }
-
         html, body {
             height: 100%
         }
@@ -23,49 +15,86 @@
            font-size: 1.125rem;
             } 
 
-            .caja {
-                width: 424px;
-                float: left;
-                margin: 0px 10px;
-                border: 1px solid;
-                padding: 5px 12px
+            /* Ocultar elementos */
+            #texto-invisible {
+                visibility:hidden
+            }
+            #ocultar-texto{
+                color: #ff0000 ;
+                display: none;
             }
 
-            img {
-                width: 100%;
+            /* Modificar el comportamiento de los elementos con la porpiedad Display */
+            a {
+                background-color: #008000;
+                color: #fff;
+                margin: 12px 0;
+                display: block;
+            }
+
+            .caja {
+                background-color: #0000ff;
+                color: #fff ;
+                width: 87%;
+                height: 130px;
+                margin: 20px 0;
+                display: inline;
+            } 
+
+            .enLineaBloque {
+                background-color: #008000;
+                border: 1px solid;
+                color: #fff ;
+                width: 25%;
+                height: 145px;
+                padding: 5px 0;
+                margin: 4px 0;
+                display: inline-block;
             }
         </style>
 </head>
 <body>
-    <h1>Como modificar el modelo de cajas tradicional</h1>
+    <h1>Como controlar la visualizacion de elementos</h1>
 
-    <h2>Contenido en columnas</h2>
-    <div class="caja">
-        <img src="images/caballop.jpg" alt="imagen de un caballo">
-        <h2>como adiestrar a tu perro</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-        aliquam nobis cumque sit aperiam nesciunt, porro aspernatur qui, autem,
-        provident soluta ut commodi eum praesentium esse. Tempora expedita
-        assumenda vero?</p>
-        <a href="#">Leer mas...</a>
-    </div>
-    <div class="caja">
-        <img src="images/caballop.jpg" alt="imagen de un perro">
-        <h2>como adiestrar a tu perro</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
-        aliquid recusandae adipisci, temporibus, explicabo laboriosam ea quam
-        ipsa consequatur perferendis deleniti, beatae error ipsam doloribus
-        repellat facere nulla corporis veritatis?</p>
-        <a href="#">Leer mas...</a>
-    </div>
-    <div class="caja">
-        <img src="images/caballop.jpg" alt="imagen de un caballo">
-        <h2>como adiestrar a tu perro</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam neque
-        non autem deserunt eligendi distinctio maiores ducimus molestias
-        deleniti. Est, natus? Tempore eveniet debitis sequi repellat
-        repellendus, esse velit deleniti?</p>
-        <a href="#">Leer mas...</a>
-    </div>
+    <h2>Propiedad visibility</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quas
+    maxime sapiente, magnam sed quam odio. Amet ullam, minus perspiciatis dicta
+    magni blanditiis laudantium quasi incidunt quo cupiditate sapiente?
+    Laborum.</p>
+    <p id="texto-invisible">Porro quae rerum ipsa alias iste quod odio dolor fugiat totam quia libero
+    delectus qui sequi molestias nisi ex officiis, inventore architecto? Aperiam
+    explicabo quos numquam neque ipsam expedita ea?</p>
+    <p>Accusamus quod facilis est sequi quia aliquid deserunt, sapiente
+    repellendus numquam blanditiis obcaecati quisquam velit eligendi, beatae
+    provident pariatur quam officiis libero suscipit fugit ea. Eius quod nostrum
+    dicta quidem?</p>
+
+    <h2>Propiedad Display: none</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tempora
+    voluptatibus explicabo. Rerum obcaecati tempora molestias in debitis
+    perspiciatis maiores illum accusantium autem quod. Enim voluptatum
+    blanditiis cum voluptates molestias!</p>
+    <p id="ocultar-texto">Id dolor architecto officiis nemo, odio obcaecati voluptas modi molestias
+    quas quia eum beatae exercitationem ratione porro doloremque ipsum aliquam!
+    Ea id nisi aut repellat molestiae totam ad placeat inventore.</p>
+    <p>Rem maxime commodi quibusdam, ipsa unde quis quod sit corrupti aspernatur
+    esse voluptates obcaecati hic deserunt, ipsam totam eum doloremque. Fugit
+    dicta itaque porro, molestiae similique consequatur perferendis aperiam
+    minima.</p>
+
+    <h2>Propiedad Display: block</h2>
+    <a href="#"> inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Contacto</a>
+
+    <h2>Propiedad Display: inline</h2>
+    <div class="caja">Ejemplo 1</div>
+    <div class="caja">Ejemplo 2</div>
+    <div class="caja">Ejemplo 3</div>
+
+    <h2>Propiedad Display</h2>
+    <span class="enLineaBloque">Caja 1</span>
+    <span class="enLineaBloque">caja 2</span>
+    <span class="enLineaBloque">caja 3</span>
 </body>
 </html>
