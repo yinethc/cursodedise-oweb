@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Opacidad y transparencia</title>
+    <style>
+        html, body {
+            height: 100%
+        }
+
+       body {
+           font-family: arial,sans-serif;
+           font-size: 1.125rem;
+            } 
+
+           img {
+               width: 33%;
+               height: auto;
+           }
+
+           #imagen1 {
+               opacity: 1;
+               filter: alpha(opacity=100);
+           }
+
+           #imagen1:hover {
+               opacity: 0.45;
+               filter:alpha(opacity=45)
+           }
+
+           #imagen2 {
+               opacity: 0.4;
+               filter: alpha(opacity=40);
+           }
+           
+           #imagen3 {
+               opacity: 0.1;
+               filter: alpha(opacity=10);
+           }
+
+           /* Cajas transparentes */
+           #caja {
+               background-color: #e4c68e;
+               margin-top: 40px;
+               margin-bottom: 10px;
+               padding: 50px;
+               width: 600px;
+               background-color: rgba(255, 365, 0, 0.45);
+               filter: alpha(opacity=45);
+           }
+        </style>
+</head>
+<body>
+    <img src="images/caballop.jpg" alt="imagen de un caballo" id="imagen1">
+    <img src="images/caballop.jpg" alt="imagen de un caballo" id="imagen2">
+    <img src="images/caballop.jpg" alt="imagen de un caballo" id="imagen3">
+
+    <div id="caja">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia autem nisi sed
+odit nemo, nam aut recusandae quos dolore unde quod harum ipsa, temporibus
+molestiae id ipsum doloremque, iure totam?
+
+    </div>
+</body>
+</html>
