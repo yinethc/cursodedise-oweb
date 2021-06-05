@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title> como trabajar con contenidos que se desbordan</title>
+    <style>
+        html, body {
+            height: 100%
+        }
+
+       body {
+           font-family: arial,sans-serif;
+           font-size: 1.125rem;
+            } 
+
+            #contenedor {
+                background-color: gold;
+                width: 550px;
+                height: 200px;
+                border: 5px solid orange;
+                padding: 5px 20px ;
+                overflow-x: hidden;
+                overflow-y: hidden;
+            }
+
+            #caja  {
+                background-color: #ccc;
+                width: 643px;
+                height: 150px;
+            }
+
+            /* Maquetar una paginacion simple */
+            #paginacion {
+                background-color: #ccc;
+                width: 50%;
+                padding: 12px;
+                overflow: hidden;
+            }
+            #paginacion-derecha {
+                float: right;
+            }
+            #paginacion-izquierda {
+                float: left;
+            }
+        </style>
+</head>
+<body>
+  <!-- <div id="contenedor">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos velit
+      eum illo accusantium repellendus tenetur voluptatibus odit mollitia error
+      beatae repudiandae laborum, voluptatum cum commodi modi inventore
+      laudantium eligendi atque!</p>
+      <p>Maxime deleniti, ad quaerat repudiandae explicabo dolor adipisci
+      nesciunt illum harum accusantium necessitatibus commodi! Quidem repellat
+      inventore doloremque numquam, sint, totam culpa odit et earum similique
+      dolores, facere veritatis error?</p>
+      <p>Dolorem fuga animi iusto, eius libero, laborum aliquam blanditiis et
+      natus minima maiores, distinctio nihil rerum fugiat optio dolorum
+      voluptates quisquam beatae! Consectetur, quos nulla voluptatem voluptas
+      dolor a sapiente.</p>
+
+      <div id="caja"></div> -->
+
+      <div id="paginacion">
+          <div id="paginacion-izquierda">Anterior</div>
+          <div id="paginacion-derecha">Siguiente</div>
+      </div>
+  </div>
+</body>
+</html>
