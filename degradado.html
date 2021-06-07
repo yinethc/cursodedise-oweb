@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Efecto lineal y radial</title>
+    <style>
+
+        html, body {
+            height: 100%
+        }
+
+       body {
+           font-family: arial,sans-serif;
+           font-size: 1.125rem;
+            }  
+
+            /* Degradado lineal */
+            #efecto-lineal {
+                width:100%;
+                height: 260px;
+                background-color: #008000;
+                margin-bottom: 12px;
+                background-image: linear-gradient(to right bottom, #008000 30%, #000, #0000ff);
+                background-image: -webkit-gradient(linear, left top, right bottom, color-stop(30%, #008000), color-stop(#000), to(#0000ff)); 
+background-image: -o-linear-gradient(left top, #008000 30%, #000, #0000ff);
+ background-image: linear-gradient(to right bottom, #008000 30%, #000, #0000ff);
+            }
+
+            #efecto-lineal-angular {
+                width: 100%;
+                height: 230px;
+                background-color: #ff0000;
+                margin-bottom: 12px;
+                background-image: linear-gradient(-50deg, #ff0000, #ffff00);
+            }
+
+            /* Degradados circulares */
+            #efecto-radial {
+                width: 100%;
+                height: 250px;
+                background-color:#ffff00;
+                background-image: radial-gradient(farthest-corner circle at center, #ffff00 50%, #000);
+            }
+
+            /* Gradientes recursivos */
+            #recursivo-lineal {
+                width: 100%;
+                height: 250px;
+                background-color: #1a82f7;
+                margin-bottom: 12px;
+                background-image: repeating-linear-gradient(90deg, #1a82f7, #000 80px);
+            }
+
+            #recursivo-radial {
+                width: 100%;
+                height: 250px;
+                background-color: #adff2f;
+                background-image: repeating-linear-gradient(closest-side at 150px 25px, #adff2f 15%, #ffff00 40% );
+            }
+        </style>
+</head>
+<body>
+   <h1>Colores degradados</h1>
+
+   <h2>Efecto lineal</h2>
+   <div id="efecto-lineal"></div>
+
+   <h2>Unidades angulares</h2>
+   <div id="efecto-lineal-angular"></div>
+
+   <h2>Degradados circulares</h2>
+   <div id="efecto-radial"></div>
+
+   <h2>Degradados recursivos</h2>
+   <div id="recursivo-lineal"></div>
+   <div id="recursivo-radial"></div>
+</body>
+</html>
