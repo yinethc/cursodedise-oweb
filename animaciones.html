@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Animaciones CSS</title>
+    <style>
+
+        html, body {
+            height: 100%
+        }
+
+       body {
+           font-family: arial,sans-serif;
+           font-size: 1.125rem;
+            }
+
+            /* Como crear animacion de elementos */
+            h2 {
+                margin-top: 15rem;
+                font-size: 3rem;
+                -webkit-animation-name: efecto-rebote;
+                animation-name: efecto-rebote;
+                -webkit-animation-duration: 1s;
+                        animation-duration: 1s;
+                -webkit-animation-timing-function: ease;
+                        animation-timing-function: ease;
+                -webkit-animation-iteration-count: infinite;
+                        animation-iteration-count: infinite;
+                -webkit-animation-direction: alternate;
+                        animation-direction: alternate;
+
+            }
+
+            @-webkit-keyframes efecto-rebote {
+                0% {-webkit-transform: translateY(50px);transform: translateY(50px)}
+                50{color:black}
+                100% {-webkit-transform: translateY(-200px) scaleY(1.5);transform: translateY(-200px) scaleY(1.5); color:red}
+            }
+            @keyframes efecto-rebote {
+                0% {-webkit-transform: translateY(50px);transform: translateY(50px)}
+                50{color:black}
+                100% {-webkit-transform: translateY(-200px) scaleY(1.5);transform: translateY(-200px) scaleY(1.5); color:red}
+            }
+
+            /* como crear un spinner basico */
+          
+  #elemento {
+                width: 200px;
+                height: 200px;
+                border: 5px double orangered;
+                margin: 0 auto 90px;
+                animation:spinner 2s 1s ease-in-out infinite alternate-reverse;
+
+            }
+            @-webkit-keyframes spinner {
+                0%{-webkit-transform: rotate(0deg);transform: rotate(0deg)}
+                30%{-webkit-transform:rotateX(180deg);transform:rotateX(180deg); border:1px solid orangered};
+                80%{-webkit-transform: rotateY(180deg);transform: rotateY(180deg)}
+                100%{-webkit-transform: rotateZ(360deg);transform: rotateZ(360deg); background-color: orangered}
+            }
+            @keyframes spinner {
+                0%{-webkit-transform: rotate(0deg);transform: rotate(0deg)}
+                30%{-webkit-transform:rotateX(180deg);transform:rotateX(180deg); border:1px solid orangered};
+                80%{-webkit-transform: rotateY(180deg);transform: rotateY(180deg)}
+                100%{-webkit-transform: rotateZ(360deg);transform: rotateZ(360deg); background-color: orangered}
+            }
+
+            /* Como crear multiples animaciones en un mismo elemento */
+            #animacionMultiple {
+                background-color: gold;
+                width:300px;
+                height: 300px;
+                border-radius: 50%;
+                margin-bottom: 300px;
+                animation: cambio-color 3s ease infinite alternate, mover-elemento 2s ease-out infinite alternate-reverse
+            }
+
+            @-webkit-keyframes cambio-color {
+                0%, 100% {background-color: gold}
+                86% {background-color: green}
+            }
+
+            @keyframes cambio-color {
+                0%, 100% {background-color: gold}
+                86% {background-color: green}
+            }
+
+            @-webkit-keyframes mover-elemento {
+                0% {-webkit-transform: translateX(900PX);transform: translateX(900PX);}
+            }
+
+            @keyframes mover-elemento {
+                0% {-webkit-transform: translateX(900PX);transform: translateX(900PX);}
+            }
+        </style>
+</head>
+<body>
+    <h1>Como crear animaciones basicas</h1>
+
+    <h2>Este texto rebota</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus porro
+    consequatur totam iure beatae nulla unde neque sint ea natus nobis, earum
+    placeat eveniet autem numquam distinctio itaque nostrum debitis!</p>
+
+    <div id="animacionMultiple"></div>
+
+
+    <div id="elemento"></div>
+</body>
+</html>
