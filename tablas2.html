@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Como aplicar estilos a las tablas</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+
+        html, body {
+            height: 100%
+        }
+
+       body {
+           font-family: arial,sans-serif;
+           font-size: 1.125rem;
+            }
+
+            /* como aplicar estilos a las tablas HTML */
+            table, td, th {
+                border-bottom: 1px solid;
+                padding: 12px;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 50%;
+                height: 150px;
+                text-align: center;
+                table-layout: fixed;
+            }
+
+            th {
+                background-color: #0004ff;
+                color: #fff;
+            }
+
+            tr:nth-child(odd) {
+                background-color: #f4f4f4;
+            }
+
+            tr:hover {
+                background-color: #ccc;
+            }
+        </style>
+</head>
+<body>
+    <h1>Aplicar estilos a las tablas</h1>
+
+    <table>
+        <tr>
+            <th>Titulo</th>
+            <th>Autor</th>
+            <th>Precio(US$)</th>
+        </tr>
+        <tr>
+            <td>La maquina del tiempo</td>
+            <td>H.G Wells</td>
+            <td>3.00</td>
+        </tr>
+        <tr>
+            <td>1984</td>
+            <td>George Orwell</td>
+            <td>4.99</td>
+        </tr>
+        <tr>
+            <td>La guerra interminable</td>
+            <td>joe Hadelman</td>
+            <td>2.95</td>    
+        </tr>
+        <tr>
+            <td>El hombre en el castillo</td>
+            <td>Phillip K. Dick</td>
+            <td>6.50</td>
+        </tr>
+    </table>
+</body>
+</html>
