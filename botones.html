@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Como aplicar estilos a los botones</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+
+        html, body {
+            height: 100%
+        }
+
+       body {
+           font-family: arial,sans-serif;
+           font-size: 1.125rem;
+            }
+
+            /* Modificar el estilo de los botones */
+            .btn {
+                border: none;
+                margin-left: 5px;
+                display: inline-block;
+                padding: 20px 25px;
+                font-size: 1.10rem;
+                color: #fff;
+                text-align: center;
+            }
+
+            .estilo1 {
+                background-color: #ffff00;
+                border-radius: 8px;
+                border: 1px solid;
+                color: #000;
+            }
+
+            .estilo2 {
+                background-color: #0000ff;
+                background-image: linear-gradient(to top right,#0000ff 12px, #000 150px)
+            }
+
+            .estilo3 {
+                background-color: #008000;
+                color:#fff
+            }
+
+            .estilo3:hover {
+                border: 1px solid #008000;
+                background-color: transparent;
+                color: #000;
+            }
+
+            .estilo4 {
+                background-color: #ff0000;
+                box-shadow: 4px 4px 8px #333;
+            }
+
+            .estilo5 {
+                background-color: #008cba;
+                margin: 20px 0;
+                width: 100%;
+            }
+
+            /* Como crear un grupo de botones */
+            #grupo-btn .boton {
+                background-color: #008000;
+                border:1px solid #008000;
+                color: #fff;
+                padding: 20px 30px;
+                text-align: center;
+                display: block;
+                font-size: 1.1rem;
+            }
+
+            #grupo-btn .boton:hover {
+                background-color: #3e8e41;
+            }
+
+            .material-icons {
+                vertical-align: middle;
+                color: red;
+                font-size: 1.35rem;
+            }
+        </style>
+</head>
+<body>
+    <h1>Aplicar estilos a los botones</h1>
+
+    <h2>Botones basicos</h2>
+    <button class="btn estilo1"><span class="material-icons">
+        cloud_download
+        </span> Boton</button>
+    <input class="btn estilo2" type="button" value="Boton">
+    <input class="btn estilo3" type="submit" value="Enviar">
+    <input class="btn estilo4" type="reset" value="Resetear">
+    <input type="button" class="btn estilo5" value="boton">
+
+    <h2>Grupo de botones</h2>
+    <div id="grupo-btn">
+        <button class="boton">boton</button>
+        <button class="boton">boton</button>
+        <button class="boton">boton</button>
+        <button class="boton">boton</button>
+    </div>
+</body>
+</html>
