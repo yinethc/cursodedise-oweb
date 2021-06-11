@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Como crear un layout responsive</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+
+        html, body {
+            height: 100%
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        /* Modificar el modelo de cajas CSS */
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+
+        /* Resetear margenes y padding */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+       body {
+           font-family: "lucida sans",sans-serif;
+           font-size: 1.125rem;
+            }
+
+            /* Estilos de la cabecera */
+            #header {
+                background-color: #4587f1;
+                color: #fff;
+                font-size: 2rem;
+                text-align: center;
+                padding: 20px 0;
+                margin-bottom: 12px;
+            }
+
+            /* Rejilla flexible */
+            #container {
+                width: 100%;
+                max-width: 1366px;
+                padding: 12px 1.46% /* Rellenos laterales; 20px/1366px*/
+            }
+
+            /* Dividir contenido en columnas */
+            /* Lateral izquierdo */
+            #side {
+                width:25%; /* 1366px x 0.25= 341.5*/
+                float: left;
+            }
+
+            /* menu de navegacion */
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            ul li {
+                background-color: #33b5eb;
+                color: #fff;
+                padding: 8px 3.51% /*12px / 341.5px*/;
+                margin-bottom: 8px ;
+                box-shadow: 0 1px 1px #00001f
+            }
+
+            ul li a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            ul li:hover {
+                background-color: #0099cc;
+            }
+
+            /* Contenido central */
+            #mainContent {
+                width:75%; /*13666 x 0.75= 1024.5px*/
+                float: left;
+                padding-left: 1.17%;
+            }
+
+            h1 {
+                margin-bottom: 20px;
+            }
+
+            #mainContent p {
+                font-size: 0.93rem;
+                text-align: justify;
+                line-height: 1.6;
+                margin-bottom: 12px;
+            }
+
+            #mainContent img {
+                max-width: 38%;
+                float:left ;
+                margin-left: 0.48%; /*5px/1024.5px*/
+                margin-right: 1.65%; /* 17px/1024.5px*/
+                margin-bottom: 4px;
+            }
+
+            /* Estilos del pie de pagina */
+            .clearfix {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            #footer {
+                background-color: #555;
+                color: #fff;
+                font-size: 0.90rem;
+                text-align: center;
+                padding-left: 20px 0;
+            }
+
+            /* Aplicar los siguientes estilos cuando el area de visualizacion sea igual o menos que 600px */
+            @media screen and (max-width: 600px) {
+                #side, #mainContent {
+                    width: 100%;
+                    padding:0;
+                }
+
+                h1 {
+                    font-size: 1.45;
+                    margin-top: 12px;
+                }
+
+                #mainContent img {
+                    max-width: 100%;
+                    margin-bottom: 12px;
+                }
+            }
+
+            /* Aplicar los siguientes estilos cuando el area de visualizacion sea igual o menos que 1366px */
+            @media screen and (min-width:1366px) {
+                #container {
+                    margin: auto
+                }
+            }
+
+        </style>
+</head>
+<body>
+    <!-- Cabecera -->
+    <div id="header">
+        <p>logo</p>
+    </div>
+
+    <!-- Contenidos -->
+    <div id="container">
+        <!-- Lateral y menu de navegacion -->
+        <div id="side">
+            <ul id="menu">
+                <li>Inicio</li>
+                <li>Categorias</li>
+                <li>Acerca de</li>
+                <li>Contacto</li>
+            </ul>
+        </div>
+
+        <!-- Contenido principal -->
+        <div id="mainContent">
+            <h1>10 lugares para hacer turismo interno</h1>
+            <img src="images/caballop.jpg" alt="imagen de un caballo" >
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            quisquam incidunt in ab aliquam reiciendis veniam, quas voluptas,
+            sed asperiores molestiae veritatis eaque laudantium porro
+            accusantium rem assumenda possimus? Ducimus!</p>
+            <p>Sapiente ipsum obcaecati impedit quam! Numquam rem explicabo
+            facilis nulla molestiae aspernatur tempora optio commodi voluptatum
+            quod nihil quas et soluta reprehenderit suscipit alias provident
+            aperiam at, perspiciatis deleniti beatae!</p>
+            <p>Pariatur, suscipit impedit, doloribus mollitia ex corporis,
+            consequatur eveniet ducimus iusto at temporibus tempora officiis id.
+            Sapiente harum excepturi recusandae nesciunt? Expedita dolorem
+            dolorum illum eligendi eum numquam placeat esse.</p>
+            <p>Dolores, facilis! Facilis nisi accusantium explicabo. Et dolorem
+            aut nobis temporibus explicabo necessitatibus ratione? Eveniet illum
+            ratione numquam, consequatur sequi fugit quis doloribus, at aliquid,
+            laborum voluptates non molestias vitae?</p>
+            <p>Iusto omnis, temporibus aliquam soluta aperiam nulla molestiae
+            reprehenderit harum? Numquam ea delectus dignissimos. Iure ipsam
+            repellat vel facilis, dolor ab eos similique! Corrupti tempora magni
+            expedita voluptas quo voluptates.</p>
+            <p>Harum qui reprehenderit sed ipsa tempore cumque soluta quibusdam!
+            Eius quia iste, ea obcaecati aut accusantium non cumque amet harum,
+            sit nihil illo a alias ab! Sequi quis doloribus voluptatum!</p>
+            <p>Placeat qui eius veniam obcaecati officiis mollitia odio error
+            dolorem aspernatur, impedit quibusdam, excepturi velit, accusantium
+            sint recusandae amet doloribus. Adipisci similique eos eligendi
+            quaerat minus ratione assumenda minima odio.</p>
+            <p>Voluptatum accusamus quisquam saepe minus iusto labore quibusdam
+            nesciunt culpa molestiae! Sapiente, reiciendis quisquam veritatis
+            hic, numquam enim et perspiciatis quis quos ratione omnis rem sit
+            ullam ad, inventore quasi!</p>
+            <p>Veritatis, vero, nostrum consectetur illo repellendus nemo
+            necessitatibus quaerat cupiditate id similique accusamus eveniet,
+            fugit officiis temporibus numquam ipsam eius. Amet voluptate dolorem
+            odio. Veniam quo doloremque quia ex laboriosam!</p>
+            <p>Quod nam dolores eaque unde ad voluptatibus consequuntur expedita
+            alias commodi est dolor ab quas, quos nisi cumque repellendus
+            perferendis pariatur possimus nesciunt corrupti suscipit eius
+            laudantium quia facilis! Ad!</p>
+        </div>
+    </div>
+
+    <!-- Pie de pagina -->
+    <div id="footer" class="clearfix">
+        <small>Derechos reservados.</small>
+    </div>
+</body>
+</html>
