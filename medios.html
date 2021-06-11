@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Como aplicar Media queries</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet"Media="print" href="css/imprimir.css">
+    <style>
+
+        html, body {
+            height: 100%
+        }
+
+       body {
+           font-family: arial,sans-serif;
+           font-size: 1.125rem;
+            }
+
+            img {
+                width: 30%;
+                height: auto;
+                float: left;
+                margin: 0.3em 0.9em 0.3em 0
+            }
+
+            /* media queries */
+            @media print {
+                body {
+                    color:blue
+                }
+                img {
+                    display: none;
+                }
+            }
+
+            @media screen and (min-width:501px) and (max-width: 992px) {
+                bode {
+                    background-color: #e0e0e0;
+                }
+                div {
+                    margin: 0 0.90em;
+                }
+                img {
+                    width: 45%;
+                }
+
+                h1 {
+                    font-size: 1.5rem
+                }
+
+                p {
+                    font-size:1.09rem
+                }
+            }
+
+            @media screen and (max-width: 500px) {
+                div {
+                    margin: 0 0.95em;
+                }
+
+                img {
+                    width:100%;
+                    margin-bottom: 0.95em;
+                }
+
+                h1 {
+                    font-size: 1.2rem
+                }
+
+                p {
+                    font-size:0.95rem;
+                    line-height: 1.5;
+                    text-align: justify;
+                }
+            }
+        </style>
+</head>
+<body>
+   <div>
+       <h1>Consejos para adiestrar tu perro</h1>
+       <img src="images/caballop.jpg" alt="imagen de un caballo">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+       laboriosam quod nobis itaque, dolores natus sed vero aut hic, laborum
+       assumenda quas animi a distinctio minima officia, reiciendis illo
+       tempore!</p>
+       <p>Nostrum neque suscipit sint, nobis temporibus, eum mollitia deserunt
+       aperiam quisquam beatae sequi incidunt ducimus a veniam quae quis
+       debitis? Quaerat sed quasi, magnam ea aperiam cum. Ullam, voluptates
+       totam!</p>
+       <p>Iure non natus alias quae, hic harum aspernatur itaque blanditiis
+       veniam nulla distinctio enim voluptas quod sequi reiciendis, obcaecati
+       aut praesentium, asperiores sed dolore recusandae quaerat iste labore
+       dolorum? Accusantium.</p>
+       <p>Sed illo nobis nisi sit veniam excepturi fugiat quibusdam minus, enim
+       eius obcaecati suscipit aspernatur officiis eligendi pariatur tempore
+       architecto repellat amet reiciendis incidunt harum, nam in. Excepturi,
+       ratione architecto?</p>
+       <p>Sed reprehenderit ipsum est natus iste. Vel cum, eum error consectetur
+       sint asperiores assumenda architecto unde voluptas iusto et corporis
+       nesciunt modi dolore fugit ipsam ullam. Tempore dolor dolorem
+       voluptate?</p>
+   </div>
+</body>
+</html>
