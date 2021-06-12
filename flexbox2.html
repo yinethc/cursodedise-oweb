@@ -15,10 +15,9 @@
 
         .cajaFlexible {
             background-color: #069e27;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            height: 300px;
-            justify-content: center;
-            align-items: center;
            
         }
 
@@ -30,14 +29,132 @@
             line-height: 80px;
             font-size: 3rem;
         }
+
+        /* flex grow */
+
+        .grow > div:nth-child(2) {
+            -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                    flex-grow: 1;
+        }
+
+        .grow > div:nth-child(3) {
+            -webkit-box-flex: 2;
+                -ms-flex-positive: 2;
+                    flex-grow: 2;
+        }
+
+        .grow > div:nth-child(5) {
+            -webkit-box-flex: 3;
+                -ms-flex-positive: 3;
+                    flex-grow: 3;
+        }
+
+        /* Flex-shrink */
+        .shrink {
+            width: 900px;
+        }
+
+        .shrink > div:nth-child(4) {
+            -ms-flex-negative: 10;
+                flex-shrink: 10;
+        }
+
+        /* Flex-basis */
+        .basis >div:nth-child(3) {
+            -ms-flex-preferred-size: 300px;
+                flex-basis: 300px;
+        }
+
+        /* flex */
+        .flex > div:nth-child(2) {
+            -webkit-box-flex:0;
+                -ms-flex:0 10 400px;
+                    flex:0 10 400px
+        }
+
+        /* Align-self */
+        .alignself {
+            height: 400px;
+        }
+
+        .alignself > div:nth-child(1){
+            -ms-flex-item-align: start;
+                align-self: flex-start;
+        }
+
+        .alignself > div:nth-child(2){
+            -ms-flex-item-align: end;
+                align-self: flex-end;
+        }
+
+        .alignself > div:nth-child(3){
+            -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
+                align-self: center;
+        }
+
+        .alignself > div:nth-child(4){
+            -ms-flex-item-align: baseline;
+                align-self: baseline;
+        }
+
+        .alignself > div:nth-child(5){
+            -ms-flex-item-align: stretch;
+                -ms-grid-row-align: stretch;
+                align-self: stretch;
+        }
+
+        /* Order */
+        .order > div:nth-child(1) {
+            -webkit-box-ordinal-group: 3;
+                -ms-flex-order: 2;
+                    order: 2
+        }
+
+        .order > div:nth-child(2) {
+            -webkit-box-ordinal-group: 2;
+                -ms-flex-order: 1;
+                    order: 1
+        }
+
+        .order > div:nth-child(3) {
+            -webkit-box-ordinal-group: 5;
+                -ms-flex-order: 4;
+                    order: 4
+        }
+
+        .order > div:nth-child(4) {
+            -webkit-box-ordinal-group: 6;
+                -ms-flex-order: 5;
+                    order: 5
+        }
+
+        .order > div:nth-child(5) {
+            -webkit-box-ordinal-group: 4;
+                -ms-flex-order: 3;
+                    order: 3
+        }
         </style>
 </head>
 <body>
     <h1>Flexbox</h1>
 
-    <!-- <h2>Propiedades del contenedor flexible</h2>
+    <h2>Propiedad flex-grow</h2>
 
-    <div class="cajaFlexible">
+    <div class="cajaFlexible grow">
+        <div>1</div>
+        <div >2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+       
+    </div>
+
+    
+    <h2>Propiedad flex-shrink</h2>
+
+    <div class="cajaFlexible shrink">
         <div>1</div>
         <div >2</div>
         <div>3</div>
@@ -48,12 +165,53 @@
         <div>8</div>
         <div>9</div>
         <div>10</div>
-    </div> -->
-
-    <h2>centrar un elemento vertical y horizontalmente</h2>
-
-    <div class="cajaFlexible">
-        <div>1</div>
+       
     </div>
+
+    <h2>Propiedad flex-basis</h2>
+
+    <div class="cajaFlexible basis">
+        <div>1</div>
+        <div >2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+       
+    </div>
+
+    
+    <h2>Propiedad flex</h2>
+
+    <div class="cajaFlexible flex">
+        <div>1</div>
+        <div >2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+       
+    </div>
+
+    <h2>Propiedad align-self</h2>
+
+    <div class="cajaFlexible alignself">
+        <div>1</div>
+        <div >2</div>
+        <div>3</div>
+        <div style="font-size: 1.5rem">4</div>
+        <div>5</div>
+       
+    </div>
+
+    <h2>Propiedad order</h2>
+
+    <div class="cajaFlexible order">
+        <div>1</div>
+        <div >2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+       
+    </div>
+    
 </body>
 </html>
