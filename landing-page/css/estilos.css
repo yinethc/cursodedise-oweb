@@ -22,3 +22,27 @@
       max-width: 1366px;
       margin: 0 auto;
   }
+  /* ESTILOS DE LOS CONTENIDOS */
+  /* Estilos de header */
+  header {
+      background-color: green;
+  }
+  #logo {
+      float: left ;
+  }
+  #infoContacto {
+      float: right;
+      margin-top: 22px;
+  }
+  div#infoContacto i {
+    color: #fff;
+    margin-right: 12px;
+    font-size: 1.20rem;
+}
+/* Seccion 1 */
+article > section:nth-child(1) {
+    background-image:linear-gradient(to left top,rgba(55,185,30,0.83), rgba(25,59,240,0.83)), url(../images/fondo_superior.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center right;
+}
