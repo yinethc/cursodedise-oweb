@@ -156,13 +156,14 @@ h2 {
     margin-bottom: 20px;
 }
 #seccionTres a {
-    display: inline-block;
-    background-color: #008000;
-    padding: 12px 10em;
-    text-decoration: none;
-    margin: 12px 0;
-}
+	display: inline-block;
+	background-color: #008000;
+	padding: 12px 10em;
+	text-decoration: none;
+	margin: 25px 0;
 }
 video {
     flex-basis: 40%;
+    width: 40%;
+    height: 100%;
 }
