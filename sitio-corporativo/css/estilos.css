@@ -1,0 +1,150 @@
+ /* ESTILOS GENERALES */
+  html, body {
+    height: 100% ;
+}
+body {
+    font-size: "Open sans", sans-serif;
+    font-size: 1.09rem;
+}
+/* Modificar el modelo de cajas de CSS */
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+/* Resetear margenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Centrar elementos en pantalla */
+.container {
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+/* BARRA DE NAVEGACION */
+#navbar {
+    background-color: #0b1245;
+}
+#navigation {
+    display: flex;
+    justify-content: space-between;
+}
+#main-nav {
+    display: flex;
+    list-style: none;
+    font-family: "lato", sans-serif;
+}
+#main-nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 25px 0.9em;
+    display: inline-block;
+}
+#main-nav li:last-child {
+    color: #ffa600;
+    padding: 25px 0.9em;
+}
+#main-nav a:hover {
+    background-color: #060829;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background-color: #121018;
+}
+#pieDePagina {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+footer h3 {
+    color: #9f9f9f;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+footer ul {
+    margin: 20px 0;
+}
+footer li {
+    list-style: none;
+    padding: 5px 0;
+}
+footer ul li a {
+    color: #9f9f9f;
+    text-decoration: none;
+    font-size: 0.88rem;
+}
+footer a img {
+    width: 160px;
+}
+#social {
+    text-align: center;
+}
+#social .fab {
+    color: #fff;
+    margin-left: 1em;
+    font-size: 1.3rem;
+}
+#copyright {
+    color:#9f9f9f;
+    text-align:center;
+    font-size:0.8rem;
+    border-top: 1px solid #272323;
+    padding:12px 0;
+}
+
+/* ESTILOS DE LA PAGINA DE INICIO */
+/* Seccion 1 */
+article > section:nth-child(1) {
+    background-image: linear-gradient(rgba(26, 26, 50, 0.9), rgba(26, 26, 50, 0.9)), url(../images/gravel-book.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover
+}
+#seccionPrimera {
+    height: 100%;
+    min-height:600px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#seccionPrimera h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: arial, verdana, sans-serif;
+}
+#seccionPrimera p {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 15px 0;
+}
+#seccionPrimera div {
+    text-align: center;
+}
+#seccionPrimera a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    border: 1px solid;
+    padding: 12px 2.5em;
+    margin: 12px 0 0;
+}
+#seccionPrimera a:hover {
+    background-color: #aeaeae;
+    color:#000;
+}
+
+/* Seccion 2 */
+#seccionSegunda {
+    display: flex;
+    padding: 80px 0;
+}
