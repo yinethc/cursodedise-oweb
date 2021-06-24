@@ -1,5 +1,6 @@
+
 /* ESTILOS GENERALES */
- html, body {
+html, body {
     height: 100% ;
 }
 body {
@@ -44,13 +45,25 @@ p {
     width: 115px;
     margin: 30px auto;
 }
+/* Aplicar un padding-top al elemento main */
+main {
+    padding-top: 80px;
+}
 /* BARRA DE NAVEGACION */
 #navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 #main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
     margin: auto;
@@ -76,19 +89,31 @@ p {
     font-size: 0.95rem;
     border: 1px solid #ff0000;
     padding: 12px 3em;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s
 }
 #main-nav + a:hover {
     background-color: #ff0000;
     color: #fff;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 nav {
     padding: 12px 0;
     border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+#navigation span {
+    display: none;
 }
 /* SECCION */
 article > section:nth-child(1) {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(41, 24, 21, 0.5)), to(rgba(41, 24, 21, 0.9))),url(../images/buffet-1.jpg);
+    background-image: -o-linear-gradient(rgba(41, 24, 21, 0.5), rgba(41, 24, 21, 0.9)),url(../images/buffet-1.jpg);
     background-image: linear-gradient(rgba(41, 24, 21, 0.5), rgba(41, 24, 21, 0.9)),url(../images/buffet-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,9 +121,15 @@ article > section:nth-child(1) {
     background-attachment: fixed;
 }
 #seccionPrimera {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100%;
     min-height: 600px;
 }
@@ -116,32 +147,48 @@ article > section:nth-child(2) {
     margin: 60px 0;
 }
 #seccionSegunda {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     margin-top: 40px;
 }
 #seccionSegunda img {
-    flex-basis: 35%;
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
     max-width: 35%;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     height: 285px;
 }
 #seccionSegunda div {
-    flex-basis: 65%;
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
     padding-left: 1.85em;
 }
 /* SECCION 3 */
 #seccionTercera {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     font-size: 2rem;
     height: 360px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #fff;
 }
 
 article > section:nth-child(3) {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(41, 24, 21, 0.5)), to(rgba(41, 24, 21, 0.9))),url(../images/food-table.jpg);
+    background-image: -o-linear-gradient(rgba(41, 24, 21, 0.5), rgba(41, 24, 21, 0.9)),url(../images/food-table.jpg);
     background-image: linear-gradient(rgba(41, 24, 21, 0.5), rgba(41, 24, 21, 0.9)),url(../images/food-table.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -153,6 +200,8 @@ article > section:nth-child(3) {
         margin: 60px 0;
     }
     #seccionCuarta {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin-top: 60px;
     }
@@ -161,7 +210,8 @@ article > section:nth-child(3) {
     }
     #seccionCuarta div {
         margin: 0 0.5em;
-        box-shadow: -2px 2px 2px #ccc, 2px 4px 1px #ccc;
+        -webkit-box-shadow: -2px 2px 2px #ccc, 2px 4px 1px #ccc;
+                box-shadow: -2px 2px 2px #ccc, 2px 4px 1px #ccc;
         padding-bottom: 15px;
     }
     #seccionCuarta h3 {
@@ -177,17 +227,26 @@ article > section:nth-child(3) {
         padding: 60px 0;
     }
     #seccionQuinta {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         margin-top: 65px;
     }
     .col {
         width: 33%;
         margin: 0 0.5em;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
         transition: all 0.5s;
     }
     .col:hover {
-        box-shadow: 0 -5px 15px #dad8d8, 0 8px 15px #dad8d8;
+        -webkit-box-shadow: 0 -5px 15px #dad8d8, 0 8px 15px #dad8d8;
+                box-shadow: 0 -5px 15px #dad8d8, 0 8px 15px #dad8d8;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
         transition: all 0.5s;
     }
 
@@ -214,7 +273,7 @@ article > section:nth-child(3) {
     }
     /* SECCION 6 */
     article > section:nth-child(6) {
-        margin: 60px 0;
+        margin: 60px 0 0;
     }
     #addressBox {
         text-align: center;
@@ -223,10 +282,21 @@ article > section:nth-child(3) {
         margin-bottom: 12px;
     }
     #contactForm {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        flex-flow: row wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
         margin: 60px 0 12px;
+    }
+    label {
+        font-size: 1.12rem;
+        margin: 12px 0;
     }
     .col-input {
         width: 33%;
@@ -238,8 +308,176 @@ article > section:nth-child(3) {
         margin: 15px 0;
         border: 1px solid #ccc;
     }
+    #col-text {
+        padding: 0 0.5em;
+    }
     #mensaje {
         width: 100%;
         border: 1px solid #ccc;
         margin: 15px 0;
     }
+    .col-input input:focus, #col-text textarea:focus {
+        border: 1px solid #3f3d3d;
+        -webkit-box-shadow: 0 0 8px #3f3d3d;
+                box-shadow: 0 0 8px #3f3d3d;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+    }
+    input[type="submit"] {
+        background-color: #008000;
+        color: #fff;
+        display: inline-block;
+        width: 215px;
+        height: 45px;
+        font-size: 1rem;
+        margin: 12px 0.5em 25px;
+        border-radius: 8px;
+    }
+    /* PIE DE PAGINA */
+    footer {
+        background-color: #1e1e1e;
+        padding: 30px 0 0;
+    }
+    #pieDePagina {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    #pieDePagina a i {
+        color: #fff;
+        font-size: 2rem;
+        margin-left: 12px;
+    }
+    #copyright {
+        text-align: center;
+        color: #fff;
+        font-size: 1rem;
+        padding: 12px 0;
+        border-top: 1px solid #423d3d;
+        margin: 12px 0 0;
+    }
+    /* MEDIA QUERIES */
+    /* Aplicar los siguientes estilos cuando el tamaño del viewport sea igual o menor que 1199px */
+    @media screen and (max-width:1199px) {
+        body {
+            font-size: 1.04rem;
+        }
+    }
+    /* Aplicar los siguientes estilos cuando el tamaño del viewport se encuentre en un rango de 980 px - 1199px */
+    @media screen and (min-width:980px) and (max-width:1199px) {
+        #seccionSegunda img {
+            display: none;
+        }
+        #seccionSegunda div {
+            -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+            padding-left: 0;
+            text-align: center;
+        }
+        .col ul li:nth-child(n+3) {
+        font-size: 0.95rem;
+        }
+        label {
+            font-size: 0.95rem;
+        }
+    }
+    /* Aplicar los siguientes estilos cuando el tamaño del viewport se encuentre en un rango de 960 px - 979px */
+    @media screen and (min-width:960px) and (max-width:979px) {
+        #main-nav li {
+            font-size: 0.95rem;
+        }
+        #main-nav + a {
+            padding: 12px 1.5em;
+        }
+        #seccionSegunda img {
+            display: none;
+        }
+        #seccionSegunda div {
+            -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+            padding-left: 0;
+            text-align: center;
+        }
+        .package-header, .price {
+            font-size: 1.1rem;
+        }
+        .col ul li:nth-child(n+3) {
+            font-size: 0.95rem;
+         }
+         label {
+         font-size: 0.95rem;
+         }
+         input[type="submit"] {
+             width: 160px;
+             font-size: 0.95rem;
+             border: none;
+         }
+    }
+    /* Aplicar los siguientes estilos cuando el tamaño del viewport sea menor que 959px */
+    @media screen and (max-width:959px) {
+        #main-nav, #main-nav + a {
+            display: none;
+        }
+        #navigation span {
+            display: block;
+            border: 1px solid #ff0000;
+            padding: 12px 1em;
+        }
+        #seccionPrimera h1 {
+            font-size: 3.3rem;
+        }
+        #seccionSegunda, #seccionCuarta, #seccionQuinta, #seccionSexta {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: column;
+                    flex-flow: column;
+        }
+        
+        #seccionSegunda img {
+            display: none;
+        }
+        #seccionSegunda div {
+            -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+            padding-left: 0;
+            text-align: center;
+        }
+        #seccionCuarta div {
+            margin: 0 0.5em 45px;
+        }
+        .col {
+            width: 100%;
+            margin: 0 auto 45px;
+        }
+        .col-input {
+            width: 100%;
+        }
+        article > section:nth-child(5) {
+            margin: -61px 0 0;
+            padding: 30px 0;
+        }
+        article > section:nth-child(6) {
+            margin: 30px 0 0;
+        }
+        article > section:nth-child(5) {
+            margin: 0 1em;
+        }
+    }
+     /* Aplicar los siguientes estilos cuando el tamaño del viewport sea igual o menor que 393px */
+     @media screen and (max-width:393px) {
+         #navigation span {
+             border: none;
+             padding: 12px 0;
+         }
+         #seccionPrimera h1 {
+             font-size: 2.95rem;
+             line-height: 1.5;
+         }
+         h2 {
+             font-size: 1.5rem;
+         }
+     }

@@ -30,6 +30,9 @@
          <nav>
              <div id="navigation" class="container">
                  <a href="index.html"><img src="images/logo.png" alt="Logotipo"></a>
+                 <span>
+                    <i class="fas fa-phone-volume"></i> 1-234-567-8910
+                 </span>
 
                  <ul id="main-nav">
                      <li><a href="index.html">Home</a></li>
@@ -194,6 +197,12 @@
          </div>
      </footer>
      <script>
+          // Evitar que los contenidos se solapen cuando la barra de navegación se encuentra fija.
+    var shiftWindow = function() { scrollBy(0, -100) };
+    window.addEventListener("hashchange", shiftWindow);
+    function load() { if (window.location.hash) shiftWindow(); }
+
+
          // Comportamientos para el menú de navegación.
     let mainNav=document.getElementById('main-nav');
     let navbarToggle=document.getElementById('navbar-toggle');
